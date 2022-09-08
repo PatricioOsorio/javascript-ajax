@@ -1,6 +1,8 @@
 const d = document;
 
-// ! XMLHttpRequest
+// ========================================================================
+// XMLHTTPREQUEST
+// ========================================================================
 (() => {
   const xhr = new XMLHttpRequest(); // Instanciacion
   const $xhrList = d.querySelector('.xhr');
@@ -40,7 +42,9 @@ const d = document;
   xhr.send();
 })();
 
-// ! fetch
+// ========================================================================
+// FETCH
+// ========================================================================
 (() => {
   const $fetchList = d.querySelector('.fetch');
   const $fragment = d.createDocumentFragment();
@@ -72,7 +76,9 @@ const d = document;
     });
 })();
 
-// ! fetch + async
+// ========================================================================
+// FETCH + ASYNC
+// ========================================================================
 (() => {
   const $fetchAsyncList = d.querySelector('.fetch-async');
   const $fragment = d.createDocumentFragment();
@@ -101,7 +107,9 @@ const d = document;
   getData();
 })();
 
-// ! axios
+// ========================================================================
+// AXIOS
+// ========================================================================
 // * Basada en promesas
 (() => {
   const $axiosList = d.querySelector('.axios');
@@ -129,7 +137,9 @@ const d = document;
     });
 })();
 
-// ! axios - async
+// ========================================================================
+// AXIOS - ASYNC
+// ========================================================================
 (() => {
   const $axiosAsyncList = d.querySelector('.axios-async');
   const $fragment = d.createDocumentFragment();
